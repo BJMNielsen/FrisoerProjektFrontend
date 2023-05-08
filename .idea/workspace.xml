@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML/Navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/profilestyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/UserProfile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/hauga/Documents/GitHub/FrisoerProjektFrontend/HTML",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +49,10 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hauga\Documents\GitHub\FrisoerProjektFrontend\HTML" />
+      <recent name="C:\Users\hauga\Documents\GitHub\FrisoerProjektFrontend\CSS" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Marcus\Desktop\Datamatiker\Opgaver\FrisoerProjektFrontend\HTML" />
     </key>
