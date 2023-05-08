@@ -8,7 +8,6 @@ function fetchAny(url) {
 let lstBookings = []
 async function actionFetchBookings() {
     lstBookings = await fetchAny(urlBookings);
-    lstBookings.forEach(fillBookingsDropDown)
 }
 
 const pbFetchBookings = document.getElementById("pbFetchBookings")
