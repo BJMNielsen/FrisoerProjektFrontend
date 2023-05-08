@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML/Navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/calendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/navnbarFont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/logo nanna.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/logo_transparent.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/Navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Navbar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +23,7 @@
       <list>
         <option value="package.json" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -40,6 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,6 +68,7 @@
       <updated>1683101677408</updated>
       <workItem from="1683101678702" duration="1627000" />
       <workItem from="1683194840999" duration="2982000" />
+      <workItem from="1683534441751" duration="8951000" />
     </task>
     <servers />
   </component>
