@@ -1,19 +1,19 @@
 ///// Vi starter med koden til at 'post'
-const urlPostUserProfile = 'http://localhost:8080/userprofile'
+const urlPostUserProfile = 'http://localhost:8080/booking'
 document.addEventListener('DOMContentLoaded', createFormEventListener);
-let formTimeSlot;
+let formBooking;
 
 function createFormEventListener(){
-    formTimeSlot = document.getElementById("userprofile-form");
-    formTimeSlot.addEventListener("submit", handleFormSubmit);
+    formBooking = document.getElementById("booking-form");
+    formBooking.addEventListener("submit", handleFormSubmit);
 }
 
 async function handleFormSubmit(event) {
     //Vi handler submitten her i stedet for default html behaviour
     event.preventDefault();
-    postLocalForm("userprofile", formTimeSlot).then(userprofile => {
-        console.log(userprofile)
-        actionFetchUserProfiles();
+    postLocalForm("booking", formBooking).then(booking => {
+        console.log(booking)
+        actionFetchBookings();
     }).catch(error => {
         alert("We got an error: " + error.message)
     })
@@ -63,17 +63,13 @@ async function postFormDataAsJson(url, jsonToSend) {
 /// Vi går her videre til 'Get'
 
 
-const urlGetUserProfiles = 'http://localhost:8080/userprofiles'
-const tableBookings = document.getElementById('userprofile-list')
+const urlGetBookings = 'http://localhost:8080/bookings'
+const tableBookings = document.getElementById('booking-list')
 
-function createUserProfileTable(userProfile) {
+function createBookingTable(booking) {
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td>${userProfile.id}</td>
-      <td>${userProfile.name}</td>
-      <td>${userProfile.email}</td>
-      <td>${userProfile.phoneNumber}</td>
-      <td>${userProfile.password}</td>
+      <td>${booking.id}</td>    
     `;
 
     cell = row.insertCell(5)
@@ -81,31 +77,29 @@ function createUserProfileTable(userProfile) {
     pbUpdate.textContent = "Opdater"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
-        const prodid = userProfile.id
-        printUserProfiles(prodid, userProfile)
+        const prodid = booking.id
+        printTimeSlots(prodid, booking)
     })
     cell.appendChild(pbUpdate)
     tableBookings.appendChild(row);
 }
 
-let lstUserProfiles = []
-function actionFetchUserProfiles() {
-    getLocalEntities("userprofiles").then(userprofiles => {
+let lstBookings = []
+function actionFetchBookings() {
+    getLocalEntities("bookings").then(bookings => {
         tableBookings.innerHTML = ''
-        userprofiles.forEach(userprofile => {
-            createUserProfileTable(userprofile)
+        bookings.forEach(booking => {
+            createBookingTable(booking)
         })
     }).catch(error => {
 
     })
-  //  lstUserProfiles = await fetchAny(urlGetUserProfiles);
-  //  tableUserProfiles.innerHTML = '';
-  //  lstUserProfiles.forEach(createUserProfileTable)
+
 }
 
-function printUserProfiles(prodid, userProfiles) {
+function printBookings(prodid, bookings) {
     console.log(prodid)
-    console.log(userProfiles)
+    console.log(bookings)
 }
-actionFetchUserProfiles()
+actionFetchBookings()
 

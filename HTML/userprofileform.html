@@ -2,39 +2,43 @@
 <html>
 <head>
   <title>Create User Profile</title>
-  <link rel="stylesheet" href="css/style.css">
+  <script src="../JavaScript/fetchhandling.js"></script>
+  <script src="../JavaScript/userprofileform.js" defer></script>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
-<h1>Product Creator</h1>
-<form id="product-form">
+<h1>Create User Profile</h1>
+<form id="userprofile-form">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name"><br>
 
-  <label for="price">Price:</label>
-  <input type="text" id="price" name="price"><br>
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email"><br>
 
-  <label for="weight">Weight:</label>
-  <input type="text" id="weight" name="weight"><br>
+  <label for="phoneNumber">Phone Number:</label>
+  <input type="text" id="phoneNumber" name="phoneNumber"><br>
 
-  <button type="submit" id="submit-btn">Create Product</button>
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="password"><br>
+
+  <button type="submit" id="submit-btn">Create User Profile</button>
 </form>
 
-<h1>Product List</h1>
+<h1>User Profile List</h1>
 <table>
   <thead>
   <tr>
     <th>ID</th>
     <th>Name</th>
-    <th>Price</th>
-    <th>Weight</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Password</th>
   </tr>
   </thead>
-  <tbody id="product-list">
+  <tbody id="userprofile-list">
   <!-- Product items will be dynamically added here -->
   </tbody>
 </table>
 
-<script src="js/fetchany.js"></script>
-<script src="js/productform.js"></script>
 </body>
 </html>

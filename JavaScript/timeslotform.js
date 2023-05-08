@@ -1,19 +1,19 @@
 ///// Vi starter med koden til at 'post'
-const urlPostUserProfile = 'http://localhost:8080/userprofile'
+const urlPostTimeSlot = 'http://localhost:8080/timeslot'
 document.addEventListener('DOMContentLoaded', createFormEventListener);
 let formTimeSlot;
 
 function createFormEventListener(){
-    formTimeSlot = document.getElementById("userprofile-form");
+    formTimeSlot = document.getElementById("timeslot-form");
     formTimeSlot.addEventListener("submit", handleFormSubmit);
 }
 
 async function handleFormSubmit(event) {
     //Vi handler submitten her i stedet for default html behaviour
     event.preventDefault();
-    postLocalForm("userprofile", formTimeSlot).then(userprofile => {
-        console.log(userprofile)
-        actionFetchUserProfiles();
+    postLocalForm("timeslot", formTimeSlot).then(timeslot => {
+        console.log(timeslot)
+        actionFetchTimeSlot();
     }).catch(error => {
         alert("We got an error: " + error.message)
     })
@@ -59,53 +59,51 @@ async function postFormDataAsJson(url, jsonToSend) {
     return response.json();
 }
 
-/// fill table with userprofiles
+/// fill table with timeslots
 /// Vi går her videre til 'Get'
 
 
-const urlGetUserProfiles = 'http://localhost:8080/userprofiles'
-const tableBookings = document.getElementById('userprofile-list')
+const urlGetTimeSlotes = 'http://localhost:8080/timeslots'
+const tableTimeSlots = document.getElementById('timeslot-list')
 
-function createUserProfileTable(userProfile) {
+function createTimeSlotTable(timeslot) {
     const row = document.createElement('tr');
     row.innerHTML = `
-      <td>${userProfile.id}</td>
-      <td>${userProfile.name}</td>
-      <td>${userProfile.email}</td>
-      <td>${userProfile.phoneNumber}</td>
-      <td>${userProfile.password}</td>
+      <td>${timeslot.id}</td>
+      <td>${timeslot.startTime}</td>
+      <td>${timeslot.endTime}</td>
     `;
 
-    cell = row.insertCell(5)
+    cell = row.insertCell(3)
     let pbUpdate = document.createElement("button")
     pbUpdate.textContent = "Opdater"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
-        const prodid = userProfile.id
-        printUserProfiles(prodid, userProfile)
+        const prodid = timeslot.id
+        printTimeSlots(prodid, timeslot)
     })
     cell.appendChild(pbUpdate)
-    tableBookings.appendChild(row);
+    tableTimeSlots.appendChild(row);
 }
 
-let lstUserProfiles = []
-function actionFetchUserProfiles() {
-    getLocalEntities("userprofiles").then(userprofiles => {
-        tableBookings.innerHTML = ''
-        userprofiles.forEach(userprofile => {
-            createUserProfileTable(userprofile)
+let lstTimeSlots = []
+function actionFetchTimeSlot() {
+    getLocalEntities("timeslots").then(timeslots => {
+        tableTimeSlots.innerHTML = ''
+        timeslots.forEach(timeslot => {
+            createTimeSlotTable(timeslot)
         })
     }).catch(error => {
 
     })
-  //  lstUserProfiles = await fetchAny(urlGetUserProfiles);
-  //  tableUserProfiles.innerHTML = '';
-  //  lstUserProfiles.forEach(createUserProfileTable)
+    //  lstUserProfiles = await fetchAny(urlGetUserProfiles);
+    //  tableUserProfiles.innerHTML = '';
+    //  lstUserProfiles.forEach(createUserProfileTable)
 }
 
-function printUserProfiles(prodid, userProfiles) {
+function printTimeSlots(prodid, timeSlots) {
     console.log(prodid)
-    console.log(userProfiles)
+    console.log(timeSlots)
 }
-actionFetchUserProfiles()
+actionFetchTimeSlot()
 
