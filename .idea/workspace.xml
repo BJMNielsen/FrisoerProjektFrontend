@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/navnbarFont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/logo nanna.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/logo_transparent.png" afterDir="false" />
+    <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="Jeg har lavet en landingpage og navbar comitted">
+      <change afterPath="$PROJECT_DIR$/CSS/priserCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/Priser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/Navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/LandingpageCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -39,20 +42,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Marcus\Desktop\Datamatiker\Opgaver\FrisoerProjektFrontend\HTML" />
@@ -74,5 +77,9 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Jeg har lavet en landingpage og navbar comitted" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jeg har lavet en landingpage og navbar comitted" />
   </component>
 </project>

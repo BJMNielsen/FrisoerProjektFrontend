@@ -3,7 +3,7 @@
     z-index:1;
 }
 h1{
-    font-size: 130px;
+    font-size: 50px;
 }
 
 body{
@@ -11,17 +11,25 @@ body{
 }
 
 .img1{
-    position: relative; left: 780px; top: -500px;
+    position: relative; left: 480px; top: -300px;
     z-index: 0;
 }
 
 .img2{
-    position: relative; left: 1350px; top: -1300px;
+    position: relative; left: 870px; top: -900px;
 }
 
 .preambleText{
     position: relative;left: 100px; top: 100px;
     z-index:1;
+}
+
+p{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px;
 }
 
 .dot-text{
@@ -45,5 +53,9 @@ html, body{
 }
 
 .footer{
-    margin-top: -1000px;
+    margin-top: -700px;
+}
+
+body{
+    overflow-x: hidden;
 }
