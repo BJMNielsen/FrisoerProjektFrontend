@@ -1,36 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Booking Calendar</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .calendar-container {
-            display: grid;
-            grid-template-columns: repeat(7, 1fr);
-            gap: 10px;
-        }
-
-        .calendar-day {
-            border: 1px solid #ccc;
-            padding: 10px;
-            text-align: center;
-            cursor: pointer;
-        }
-    </style>
+    <title>Create User Profile</title>
+    <link rel="stylesheet" href="../CSS/testStyle.css">
 </head>
 <body>
-<div class="container">
-    <h1 class="text-center">Booking Calendar</h1>
-    <div id="calendar" class="calendar-container"></div>
+<div class="profile">
+    <div class="profile-left">
+        <h1>Create User Profile</h1>
+        <form id="userprofile-form">
+            <label for="name">Navn:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required><br>
+
+            <label for="phoneNumber">Telefonnummer:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <button type="submit" id="submit-btn">Opret profil</button>
+        </form>
+    </div>
 </div>
 
-<script src="booking.js"></script>
+<h1 class="user-list-heading">User Profile List</h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Password</th>
+    </tr>
+    </thead>
+    <tbody id="userprofile-list">
+    <!-- User profile items will be dynamically added here -->
+    </tbody>
+</table>
+
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Time Slot</title>
+  <script src="../JavaScript/fetchhandling.js"></script>
+  <script src="../JavaScript/timeslotform.js" defer></script>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body>
+<h1>Create Time Slot</h1>
+<form id="timeslot-form">
+
+  <label for="startTime">Start Time:</label>
+  <input type="text" id="startTime" name="startTime"><br>
+
+  <label for="endTime">End Time:</label>
+  <input type="text" id="endTime" name="endTime"><br>
+
+  <button type="submit" id="submit-btn">Create Time Slot</button>
+</form>
+
+<h1>Time Slot List</h1>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Start Time</th>
+    <th>End Time</th>
+  </tr>
+  </thead>
+  <tbody id="timeslot-list">
+  <!-- Product items will be dynamically added here -->
+  </tbody>
+</table>
+
+</body>
+</html>
