@@ -1,17 +1,17 @@
 ///// Vi starter med koden til at 'post'
 const urlPostUserProfile = 'http://localhost:8080/userprofile'
 document.addEventListener('DOMContentLoaded', createFormEventListener);
-let formTimeSlot;
+let formUserProfile;
 
 function createFormEventListener(){
-    formTimeSlot = document.getElementById("userprofile-form");
-    formTimeSlot.addEventListener("submit", handleFormSubmit);
+    formUserProfile = document.getElementById("userprofile-form");
+    formUserProfile.addEventListener("submit", handleFormSubmit);
 }
 
 async function handleFormSubmit(event) {
     //Vi handler submitten her i stedet for default html behaviour
     event.preventDefault();
-    postLocalForm("userprofile", formTimeSlot).then(userprofile => {
+    postLocalForm("userprofile", formUserProfile).then(userprofile => {
         console.log(userprofile)
         actionFetchUserProfiles();
     }).catch(error => {
