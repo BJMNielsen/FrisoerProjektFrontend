@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Din Profil</title>
+    <link rel="stylesheet" href="../CSS/userProfileStyle.css">
+
+</head>
+<body>
+<div class="profile">
+    <div class="profile-left">
+        <h2>Navn:</h2>
+        <p>Glenn Hansen</p>
+        <h2>Email:</h2>
+        <p>Glenn@yahoo.com</p>
+        <h2>Telefon-nr:</h2>
+        <p>+45 12345678</p>
+        <button class="edit-button">Edit Profile</button>
+    </div>
+    <div class="profile-middle">
+        <img src="4013014.png" class="profile-picture" alt="Profile Picture">
+    </div>
+    <div class="profile-right">
+        <h2>Dine tider</h2>
+        <table class="bookings" id="tblBooking">
+            <tr style="color:white; background-color: black">
+                <th>Dato</th>
+                <th>Tidspunkt</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<script src="JavaScript/fetchbookingslocal.js"></script>
+<script src="JavaScript/createtableuserprofile.js"></script>
+
+</body>
+</html>
