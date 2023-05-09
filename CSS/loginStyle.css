@@ -5,6 +5,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: ivory;
+
 }
 
 .container {
@@ -12,6 +14,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    background-color: white;
+
 }
 
 h1 {

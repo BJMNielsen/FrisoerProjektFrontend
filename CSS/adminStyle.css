@@ -5,6 +5,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: ivory;
 }
 
 h1 {
@@ -16,6 +17,8 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    background-color: white;
+
 }
 
 table {
