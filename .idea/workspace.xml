@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="CRUD til userprofile underway">
-      <change afterPath="$PROJECT_DIR$/HTML/bookingform.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/timeslotform.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/css.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/bookingform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/html.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/fetchhandling.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/createUserPage.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/userprofileform.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/userprofileform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/JS.txt" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/timeslotform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/userprofileform.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/userprofileform.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +109,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CRUD til userprofile underway" />
