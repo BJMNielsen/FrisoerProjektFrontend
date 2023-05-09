@@ -2,30 +2,31 @@
 <html>
 <head>
   <title>Create User Profile</title>
-  <script src="../JavaScript/fetchhandling.js"></script>
-  <script src="../JavaScript/userprofileform.js" defer></script>
-  <link rel="stylesheet" href="../CSS/createUserStyle.css">
-
+  <link rel="stylesheet" href="../CSS/testStyle.css">
 </head>
 <body>
-<h1>Create User Profile</h1>
-<form id="userprofile-form">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required><br>
+<div class="profile">
+  <div class="profile-left">
+    <h1>Create User Profile</h1>
+    <form id="userprofile-form">
+      <label for="name">Navn:</label>
+      <input type="text" id="name" name="name" required><br>
 
-  <label for="email">Email:</label>
-  <input type="text" id="email" name="email" required><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required><br>
 
-  <label for="phoneNumber">Phone Number:</label>
-  <input type="text" id="phoneNumber" name="phoneNumber"><br>
+      <label for="phoneNumber">Telefonnummer:</label>
+      <input type="text" id="phoneNumber" name="phoneNumber"><br>
 
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required><br>
 
-  <button type="submit" id="submit-btn">Create User Profile</button>
-</form>
+      <button type="submit" id="submit-btn">Opret profil</button>
+    </form>
+  </div>
+</div>
 
-<h1>User Profile List</h1>
+<h1 class="user-list-heading">User Profile List</h1>
 <table>
   <thead>
   <tr>
@@ -37,7 +38,7 @@
   </tr>
   </thead>
   <tbody id="userprofile-list">
-  <!-- Product items will be dynamically added here -->
+  <!-- User profile items will be dynamically added here -->
   </tbody>
 </table>
 

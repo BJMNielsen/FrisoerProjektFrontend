@@ -6,7 +6,6 @@ body {
     align-items: center;
     height: 100vh;
     background-color: ivory;
-
 }
 
 .profile {
@@ -54,7 +53,7 @@ body {
     display: block;
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #00063C;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -62,6 +61,6 @@ body {
 }
 
 .edit-button:hover {
-    background-color: #45a049;
+    background-color: #00059C;
 }
 
