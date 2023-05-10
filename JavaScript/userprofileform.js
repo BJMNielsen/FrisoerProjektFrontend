@@ -17,22 +17,7 @@ async function handleFormSubmit(event) {
     }).catch(error => {
         alert("We got an error: " + error.message)
     })
-    /*
-    const formData = new FormData(formUserProfile);
-    console.log(formData);
-    const jsonToPost = convertFormDataToJson(formData)
-    console.log(jsonToPost)
-    try {
-        const responseData = await postFormDataAsJson(urlPostUserProfile, jsonToPost);
-        console.log(responseData)
-        //her kan man indsæt nyt userprofile i tabellen
-        actionFetchUserProfiles()
-    } catch (error) {
-        alert(error.message);
-        console.error(error);
-    }
 
-     */
 }
 
 function convertFormDataToJson(formData) {
@@ -63,7 +48,6 @@ async function postFormDataAsJson(url, jsonToSend) {
 /// Vi går her videre til 'Get'
 
 
-const urlGetUserProfiles = 'http://localhost:8080/userprofiles'
 const tableBookings = document.getElementById('userprofile-list')
 
 function createUserProfileTable(userProfile) {
@@ -98,9 +82,7 @@ function actionFetchUserProfiles() {
     }).catch(error => {
 
     })
-  //  lstUserProfiles = await fetchAny(urlGetUserProfiles);
-  //  tableUserProfiles.innerHTML = '';
-  //  lstUserProfiles.forEach(createUserProfileTable)
+
 }
 
 function printUserProfiles(prodid, userProfiles) {

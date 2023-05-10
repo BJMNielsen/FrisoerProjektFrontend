@@ -9,6 +9,18 @@ function createFormEventListener(){
 }
 
 async function handleFormSubmit(event) {
+    event.preventDefault();
+    let userEmail = document.getElementById("email").value;
+    let userPassword = document.getElementById("password").value;
+    console.log(userEmail)
+    const promise =  fetch(urlPostUserProfile + "/" + userEmail + "/" + userPassword)
+    const response = await promise
+
+    const user = await response.json()
+
+    console.log(user.phoneNumber)
+
+/*
     //Vi handler submitten her i stedet for default html behaviour
     event.preventDefault();
     postLocalForm("login", formLogin).then(userprofile => {
@@ -17,7 +29,7 @@ async function handleFormSubmit(event) {
     }).catch(error => {
         alert("We got an error: " + error.message)
     })
-
+*/
 }
 
 
