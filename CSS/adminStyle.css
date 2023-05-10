@@ -1,6 +1,9 @@
 
+@font-face {
+    font-family: Epil;
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: Epil, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
