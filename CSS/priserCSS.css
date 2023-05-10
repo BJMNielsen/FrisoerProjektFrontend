@@ -7,18 +7,18 @@
 }
 
 .boxMedPriser {
-    position: relative; left: 600px; top:-170px;
+    position: relative; left: 600px; top:-100px;
     width: 600px;
-    height: 400px;
-    background-color: #00063c;
+    height: 200px;
     border: 1px solid #ccc;
     z-index: 1;
+    color: greenyellow;
 }
 
 .footer{
     position: relative;
     left: 0;
-    top: 400px;
+    top: 800px;
     width: 100%;
     background-color: white;
     color: white;

@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="Jeg har lavet en landingpage og navbar comitted">
-      <change afterPath="$PROJECT_DIR$/CSS/priserCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/Priser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/FetchPriser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/userProfilePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/LandingpageCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/navnbarFont.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/navnbarFont.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/priserCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/priserCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/Priser.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/Priser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/userProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/userProfilePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,7 @@
         <option value="package.json" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -77,6 +82,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jeg har lavet en landingpage og navbar comitted" />
