@@ -3,6 +3,8 @@
 <head>
   <title>Mine Aftaler</title>
   <link rel="stylesheet" href="../CSS/adminStyle.css">
+  <script src="../JavaScript/adminfetch.js" defer></script>
+  <script src="../JavaScript/fetchhandling.js"></script>
 
 </head>
 <body>
@@ -11,29 +13,15 @@
   <table>
     <thead>
     <tr>
-      <th>Kundens Navn</th>
-      <th>Dato</th>
-      <th>Behandling</th>
-      <th>Pris</th>
-      <th>Telefonnummer</th>
+      <th scope="col">Kundens Navn</th>
+      <th scope="col">Dato</th>
+      <th scope="col">Behandling</th>
+      <th scope="col">Pris</th>
+      <th scope="col">Telefonnummer</th>
     </tr>
     </thead>
-    <tbody>
-    <tr>
-      <td>Patrick Bateman</td>
-      <td>2023-05-10</td>
-      <td>Murder</td>
-      <td>200 kr</td>
-      <td>123-456-7890</td>
-    </tr>
-    <tr>
-      <td>Glenn Hansen</td>
-      <td>2023-05-12</td>
-      <td>Facial</td>
-      <td>150 kr</td>
-      <td>987-654-3210</td>
-    </tr>
-    <!-- Add more rows for additional appointments -->
+    <tbody id="tblUserProfiles">
+
     </tbody>
   </table>
 </div>
