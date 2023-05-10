@@ -13,23 +13,23 @@ async function handleFormSubmit(event) {
     let userEmail = document.getElementById("email").value;
     let userPassword = document.getElementById("password").value;
     console.log(userEmail)
-    const promise =  fetch(urlPostUserProfile + "/" + userEmail + "/" + userPassword)
-    const response = await promise
+    try{const promise = await fetch(urlPostUserProfile + "/" + userEmail + "/" + userPassword)
+        if(!promise.ok){
+            throw new Error('Login Failed.');
+        } else if(promise.ok){
+            const response = await promise
+            const user = await response.json()
+            console.log(user.phoneNumber);
+            alert("Login Successful.");
+        }
+    }
+        catch (error) {
+            console.error('Error:', error);
+            alert("Login not valid.")
+        }
 
-    const user = await response.json()
 
-    console.log(user.phoneNumber)
 
-/*
-    //Vi handler submitten her i stedet for default html behaviour
-    event.preventDefault();
-    postLocalForm("login", formLogin).then(userprofile => {
-        console.log(userprofile)
-        actionFetchUserProfiles();
-    }).catch(error => {
-        alert("We got an error: " + error.message)
-    })
-*/
 }
 
 
