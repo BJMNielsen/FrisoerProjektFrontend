@@ -1,4 +1,8 @@
+@font-face {
+    font-family: Epil;
+}
 body {
+    font-family: Epil, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +53,7 @@ button {
 }
 
 button:hover {
-    background-color: #3e8e41;
+    background-color: #00063C;
 }
 
 h1.user-list-heading {

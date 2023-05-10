@@ -1,0 +1,61 @@
+.text{
+    position:relative; left:100px; top: 100px;
+    z-index:1;
+}
+h1{
+    font-size: 50px;
+}
+
+body{
+    background-color: ivory;
+}
+
+.img1{
+    position: relative; left: 480px; top: -300px;
+    z-index: 0;
+}
+
+.img2{
+    position: relative; left: 870px; top: -900px;
+}
+
+.preambleText{
+    position: relative;left: 100px; top: 100px;
+    z-index:1;
+}
+
+p{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.dot-text{
+    position: relative; left: 100px; top: 100px;
+
+}
+
+.BookTidPille{
+    position: relative; left: 80px; top: 80px;
+    font-size: 50px;
+    zoom: 1.2;
+}
+
+.sePriserPill{
+    position: relative;left: 140px; top: -70px;
+    zoom: 1.2;
+}
+
+html, body{
+    margin: 0;
+}
+
+.footer{
+    margin-top: -700px;
+}
+
+body{
+    overflow-x: hidden;
+}

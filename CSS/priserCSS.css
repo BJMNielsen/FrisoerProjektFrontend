@@ -1,0 +1,62 @@
+.prisertext{
+    position: relative; left: 100px; top: 60px;
+}
+
+.underTextPriser{
+    position: relative; left: 100px; top: 60px;
+}
+
+.boxMedPriser {
+    position: relative; left: 600px; top:-170px;
+    width: 600px;
+    height: 400px;
+    background-color: #00063c;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.footer{
+    position: relative;
+    left: 0;
+    top: 400px;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: greenyellow;
+    font-size: 32px;
+}
+
+.Vask{
+    position: relative;left: 650px; top: -550px;
+    z-index: 3;
+}
+
+.vaskPris{
+    position: relative;left: 1050px; top: -595px;
+    z-index: 3;
+
+}
+
+.Mandeklip{
+    position: relative;left: 650px; top: -550px;
+    z-index: 3;
+}
+
+.MandeklipPris{
+    position: relative;left: 1050px; top: -595px;
+    z-index: 3;
+}
+
+.Dameklip{
+    position: relative;left: 650px; top: -485px;
+    z-index: 3;
+}
+
+.DameklipPris{
+    position: relative;left: 1050px; top: -535px;
+    z-index: 3;
+}
