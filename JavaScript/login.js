@@ -20,6 +20,8 @@ async function handleFormSubmit(event) {
             const response = await promise
             const user = await response.json()
             console.log(user.phoneNumber);
+            console.log(user.id);
+            userId = user.id;
             alert("Login Successful.");
         }
     }
@@ -27,9 +29,7 @@ async function handleFormSubmit(event) {
             console.error('Error:', error);
             alert("Login not valid.")
         }
-
-
-
+    console.log(userId);
 }
 
 

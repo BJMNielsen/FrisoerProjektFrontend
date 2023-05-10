@@ -19,10 +19,20 @@ body {
     padding: 20px;
     background-color: #fff;
 }
+.login-user {
+    margin-top: 50px;
+    font-family: Epil, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
 
 h1 {
     text-align: center;
 }
+
+
 
 form {
     display: flex;
