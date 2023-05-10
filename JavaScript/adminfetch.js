@@ -2,7 +2,7 @@ console.log("Jeg er inde i admin fetch")
 const tblUserProfiles = document.querySelector("#tblUserProfiles")
 
 
-function createRowsForUserProfilesTable(userprofile, booking){
+function createRowsForUserProfilesTable(userprofile){
     const row = document.createElement("tr")
     row.innerHTML= `
     <td>${userprofile.name}</td>  
