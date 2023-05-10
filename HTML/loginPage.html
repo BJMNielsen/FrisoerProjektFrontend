@@ -3,18 +3,39 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="../CSS/loginStyle.css">
+  <script src="../JavaScript/login.js" defer></script>
+  <script src="../JavaScript/fetchhandling.js"></script>
+
 
 </head>
 <body>
 <div class="container">
   <h1>Login Page</h1>
-  <form>
+  <form id="login-form">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
+  <!--  <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>-->
     <button type="submit">Login</button>
   </form>
+
+  <h1 class="user-list-heading">User Profile List</h1>
+  <table>
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone Number</th>
+      <th>Password</th>
+    </tr>
+    </thead>
+    <tbody id="userprofile-list">
+    <!-- User profile items will be dynamically added here -->
+    </tbody>
+  </table>
+
+
   <div class="forgot-password">
     <a href="#">Glemt password?</a>
   </div>
