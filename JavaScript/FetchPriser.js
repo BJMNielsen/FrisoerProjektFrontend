@@ -24,7 +24,7 @@ function fetchTreatments(){
             createRowsForTreatmentTable(treatment)
         })
     }).catch(error =>{
-        alert("there was an error retrieving the treatments, Error: " + error.message)
+        alert("there was an error retrieving the treatmentsData, Error: " + error.message)
     })
 }
 
