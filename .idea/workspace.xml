@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/userProfileFormStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/userProfileFormStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/loginPage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/userprofileform.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/userprofileform.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/fetchhandling.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/fetchhandling.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
