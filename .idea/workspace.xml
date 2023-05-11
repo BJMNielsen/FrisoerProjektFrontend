@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="FetchAny">
-      <change afterPath="$PROJECT_DIR$/CSS/calender.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/calender.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/calender.js" afterDir="false" />
+    <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej">
+      <change afterPath="$PROJECT_DIR$/CSS/FooterCSS.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CSS/userProfilecSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CSS/LandingpageCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/loginPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/userProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/userProfilePage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/FetchPriser.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/FetchPriser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/userProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/userProfilePage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +25,8 @@
       <list>
         <option value="package.json" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,21 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Marcus\Desktop\Datamatiker\Opgaver\FrisoerProjektFrontend\HTML" />
@@ -82,14 +85,7 @@
       <option name="project" value="LOCAL" />
       <updated>1683716425508</updated>
     </task>
-    <task id="LOCAL-00002" summary="FetchAny">
-      <created>1683796225597</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1683796225597</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +105,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jeg har lavet en landingpage og navbar comitted" />
     <MESSAGE value="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej" />
-    <MESSAGE value="FetchAny" />
-    <option name="LAST_COMMIT_MESSAGE" value="FetchAny" />
+    <option name="LAST_COMMIT_MESSAGE" value="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej" />
   </component>
 </project>

@@ -6,13 +6,26 @@ let formLogin;
 function createFormEventListener(){
     formLogin = document.getElementById("login-form");
     formLogin.addEventListener("submit", handleFormSubmit);
+
 }
+
+
+
 
 async function handleFormSubmit(event) {
     event.preventDefault();
     let userEmail = document.getElementById("email").value;
     let userPassword = document.getElementById("password").value;
+    const emailPasswordUrl = userEmail + "/" + userPassword
+
     console.log(userEmail)
+
+    getLocalEntity("login", emailPasswordUrl).then(userProfile => {
+        setUserProfileCookie(userProfile)
+
+        window.location.href = 'userProfilePage.html'
+    }).catch(error => {alert(error.message)})
+    /*
     try{const promise = await fetch(urlPostUserProfile + "/" + userEmail + "/" + userPassword)
         if(!promise.ok){
             throw new Error('Login Failed.');
@@ -21,8 +34,9 @@ async function handleFormSubmit(event) {
             const user = await response.json()
             console.log(user.phoneNumber);
             console.log(user.id);
+            sessionStorage.setItem("userId",JSON.stringify(user.id)); // Store the userId in sessionStorage
             userId = user.id;
-            alert("Login Successful.");
+            window.location.href = 'userProfilePage.html';
         }
     }
         catch (error) {
@@ -30,8 +44,22 @@ async function handleFormSubmit(event) {
             alert("Login not valid.")
         }
     console.log(userId);
+    console.log(userId = sessionStorage.getItem("userId")) // Retrieve the userId from sessionStorage
+     */
+
 }
 
+function setUserProfileCookie(userProfile) {
+    userId = sessionStorage.setItem("userId", JSON.stringify(userProfile.id))
+    email = sessionStorage.setItem("email", JSON.stringify(userProfile.email))
+    name = sessionStorage.setItem("name", JSON.stringify(userProfile.name))
+    phoneNumber = sessionStorage.setItem("phoneNumber", JSON.stringify(userProfile.phoneNumber))
+    password =  sessionStorage.setItem("password", JSON.stringify(userProfile.password))
+}
+
+function getUserProfileCookie() {
+
+}
 
 /// fill table with userprofiles
 /// Vi går her videre til 'Get'

@@ -7,14 +7,16 @@ function intetNavnHar(treatments) {
 }
 
 function createRowsForTreatmentTable(treatment){
-    const row = document.createElement("tr")
-    row.innerHTML= `
+    const row2 = document.createElement("tr")
+    row2.innerHTML= `
     <td>${treatment.name}</td>
     <td>${treatment.price}</td>
     
     `;
-    tblTreatments.appendChild(row)
+    tblTreatments.appendChild(row2)
 }
+
+
 
 function fetchTreatments(){
     tblTreatments.innerHTML = ''
