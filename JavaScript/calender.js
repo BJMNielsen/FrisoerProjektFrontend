@@ -37,6 +37,9 @@ async function clickedTimeSlot(event){
 
 function createTableOfTimeSlots(data) {
     // map er en function, der gør at man kan manipulere en liste, manipulere den og giver dig en ny liste.
+    //@TODO
+    // Lav en eventlistener for hver table row, så når vi klikker på den, så bliver timeslot lagt ind i booking objektet.
+    // samtidigt vil vi også gerne have at farven på row skifter
     const tableRowArray = data.map(timeslot => `
     <tr>
         <td>${timeslot.startTime}</td>
