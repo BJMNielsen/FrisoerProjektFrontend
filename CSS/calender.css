@@ -1,0 +1,12 @@
+#tableOfAvailableTimes {
+    margin-top: 20px;
+    width: 20%;
+    margin-right: auto; /* centrere table*/
+    margin-left: auto; /* centrere table*/
+    text-align: center;
+}
+
+#main {
+    padding-top: 20px;
+    text-align: center; /* centrere datovælger*/
+}
