@@ -1,4 +1,21 @@
-console.log("HELLO")
-sessionStorage.setItem("user", "1")
-const userid = sessionStorage.getItem("user")
-console.log(userid)
+
+let userProfile;
+
+function checkIfUserIsLoggedIn(){
+    const userid = sessionStorage.getItem("userId")
+    console.log(userid)
+    if(userid == null){
+        console.log("Bruger ID er null, dvs ingen er logget ind.")
+        window.location.href = 'loginPage.html'
+        return;
+    }
+    let response = fetchAny(`userprofile/${userid}`, "GET", null)
+    response
+        .then(fetchedUserProfile => {userProfile = fetchedUserProfile})
+        .catch(error => {
+            console.log("brugeren du er logget ind som eksistere ikke mere. " + "Error message: " + error.message);
+            window.location.href = 'loginPage.html';
+        })
+}
+
+checkIfUserIsLoggedIn()
