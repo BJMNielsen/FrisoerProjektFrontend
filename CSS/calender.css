@@ -10,3 +10,7 @@
     padding-top: 20px;
     text-align: center; /* centrere datovælger*/
 }
+
+.checked {
+    background-color: #5d62ee;
+}

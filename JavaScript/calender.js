@@ -29,7 +29,7 @@ async function showAllAvailableTimeSlotsInTable() {
 
 async function clickedTimeSlot(event){
     const timeSlotRow = event.target;
-    document.querySelector("#").setAttribute("data-id", postObject.id);
+    //document.querySelector("#").setAttribute("data-id", postObject.id);
     const id = form.getAttribute("data-id");
     console.log(id);
     await deletePost(id);
@@ -41,7 +41,7 @@ function createTableOfTimeSlots(data) {
     // Lav en eventlistener for hver table row, så når vi klikker på den, så bliver timeslot lagt ind i booking objektet.
     // samtidigt vil vi også gerne have at farven på row skifter
     const tableRowArray = data.map(timeslot => `
-    <tr>
+    <tr id="timeSlotRow${timeslot.id}" onclick="setTheTimeslotValue(${timeslot.id})">
         <td>${timeslot.startTime}</td>
         <td>${timeslot.endTime}</td>
     </tr>
@@ -55,6 +55,24 @@ function createTableOfTimeSlots(data) {
 
     const th = document.querySelector("#tableOfAvailableTimes")
     th.style.visibility = "visible";
+}
+
+function setTheTimeslotValue(timeSlotId) {
+    console.log("TimeSlot ID:", timeSlotId)
+    const checkedTimeSlotRowElement = document.querySelector(".checked")
+    if (checkedTimeSlotRowElement !== null) {
+        checkedTimeSlotRowElement.classList.remove("checked")
+        booking.timeSlot = null
+    }
+    getLocalEntity("timeslot", timeSlotId).then(timeSlot => {
+        booking.timeSlot = timeSlot
+        console.log("1 Picked TimeSlot:", booking.timeSlot)
+        const timeslotRowElement = document.querySelector(`#timeSlotRow${timeSlotId}`)
+        timeslotRowElement.classList.add("checked")
+    }).catch(error => {
+        console.log("It was a failure to get the picked timeslot with the ID: " + timeSlotId + " to be put in the booking")
+        console.log("Because there was an Error:", error.message)
+    })
 }
 
 function hideTableIfNoRows() {
