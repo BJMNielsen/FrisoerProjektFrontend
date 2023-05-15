@@ -14,7 +14,7 @@ function updateUserprofileInformation(){
    document.querySelector("#Email").innerHTML = email;
    document.querySelector("#phoneNumber").innerHTML = phoneNumber;
 
-    document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
+   // document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
 
 
 }
