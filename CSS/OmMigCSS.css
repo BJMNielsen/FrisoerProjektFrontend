@@ -1,0 +1,11 @@
+.BoxMedTekst{
+    width: 500px; /* Set the width of the box */
+    height: 400px; /* Set the height of the box */
+    background-color: lightgrey; /* Set the background color of the box */
+    border: 1px solid #000000; /* Add a border to the box */
+    position: relative; top: -100px; left: 80px ;
+}
+
+.NannaBillede{
+    position: relative;top: -500px; left: 600px;
+}

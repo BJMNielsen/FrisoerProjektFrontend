@@ -1,5 +1,5 @@
 .text{
-    position:relative; left:100px; top: 100px;
+    position:relative; left:100px; top: -40px;
     z-index:1;
 }
 h1{
@@ -11,16 +11,16 @@ body{
 }
 
 .img1{
-    position: relative; left: 480px; top: -300px;
+    position: relative; left: 480px; top: -600px;
     z-index: 0;
 }
 
 .img2{
-    position: relative; left: 870px; top: -900px;
+    position: relative; left: 870px; top: -1100px;
 }
 
 .preambleText{
-    position: relative;left: 100px; top: 100px;
+    position: relative;left: 100px; top: -30px;
     z-index:1;
 }
 
@@ -33,12 +33,13 @@ h3{
 }
 
 .dot-text{
-    position: relative; left: 100px; top: 100px;
+    position: relative; left: 100px; top: -20px;
+    z-index: 2;
 
 }
 
 .BookTidPille{
-    position: relative; left: 80px; top: 80px;
+    position: relative; left: 80px; top: -10px;
     font-size: 50px;
     zoom: 1.2;
 }
