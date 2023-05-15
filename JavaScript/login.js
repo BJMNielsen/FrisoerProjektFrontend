@@ -22,7 +22,9 @@ async function handleFormSubmit(event) {
 
     getLocalEntity("login", emailPasswordUrl).then(userProfile => {
         setUserProfileCookie(userProfile)
-
+    if(userProfile.id === 1){
+        window.location.href = 'adminPage.html'
+    }else
         window.location.href = 'userProfilePage.html'
     }).catch(error => {alert(error.message)})
     /*

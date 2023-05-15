@@ -15,8 +15,7 @@ function updateUserprofileInformation(){
    document.querySelector("#phoneNumber").innerHTML = phoneNumber;
 
    // document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
-
-
+    
 }
 
 
