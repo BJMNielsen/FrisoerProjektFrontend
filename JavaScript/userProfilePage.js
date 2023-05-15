@@ -3,6 +3,8 @@ console.log("jeg er i userprofilePage javascript")
 const bookingsTable = document.querySelector("#tblBooking")
 
 
+
+
 const fetchName = document.querySelector("#name")
 const fetchEmail = document.querySelector("#email")
 const fetchPhoneNumber = document.querySelector("#phoneNumber")

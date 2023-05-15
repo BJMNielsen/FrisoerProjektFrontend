@@ -7,18 +7,15 @@
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="Lavet tomme filer til kalender">
       <change afterPath="$PROJECT_DIR$/JavaScript/checkIfUserIsLoggedIn.js" afterDir="false" />
     <list default="true" id="503451ae-a9f6-4a6e-a921-b818d56cb296" name="Changes" comment="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej">
-      <change afterPath="$PROJECT_DIR$/CSS/FooterCSS.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CSS/userProfilecSS.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/calender.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/calender.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/calender.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/calender.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/calender.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/calender.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CSS/LandingpageCSS.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/LandingpageCSS.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/loginPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/loginPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/adminPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/adminPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/frontpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/frontpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/userProfilePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/userProfilePage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/FetchPriser.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/FetchPriser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/userProfilePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/userProfilePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/adminfetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/adminfetch.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +80,8 @@
       <workItem from="1683101678702" duration="1627000" />
       <workItem from="1683194840999" duration="2982000" />
       <workItem from="1683534441751" duration="8951000" />
+      <workItem from="1683807483845" duration="2147000" />
+      <workItem from="1683812209966" duration="1215000" />
     </task>
     <task id="LOCAL-00001" summary="try catch i login, den fortæller dig nu om dit login var successfuldt eller ej">
       <created>1683716425508</created>
