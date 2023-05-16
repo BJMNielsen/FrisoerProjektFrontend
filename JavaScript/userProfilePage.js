@@ -9,7 +9,7 @@ function updateUserprofileInformation(){
    document.querySelector("#Email").innerHTML = email;
    document.querySelector("#phoneNumber").innerHTML = phoneNumber;
 
-   // document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
+   //document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
     
 }
 
@@ -78,16 +78,16 @@ async function deleteBookingButtonEvent(event) {
         // Ellers tager vi knappens id, finder "-deleteBooking" delen af id'et og sletter.
         // Vi har givet hver knap et id der hedder "id + -deleteBooking", hvor id er det samme id som hver bookningen har.
         // Dvs for at få fat i bookningens id som vi kan lave et fetch delete kald på til vores backend, så fjerner vi "-deleteBooking" fra knapnavnet.
-        const id = target.id.replace("-deleteBooking", "");
-        console.log(id);
-        deleteBookingById(id);
+        const booking = target.id.replace("-deleteBooking", "");
+        console.log(booking);
+        deleteBookingById(booking);
         // Vi refresher vores tabel
         window.location.reload();
     }
 
-    function deleteBookingById(bookingId) {
+    function deleteBookingById(booking) {
         // Vi laver et fetch kald, med vores id, og specifier metoden til at være DELETE
-        fetchAny("bookings/bookingId/" + bookingId,"DELETE",null)
+        fetchAny("booking","DELETE",booking)
             // Her siger vi at responset vi får fra vores backend
             // (hvor vi jo har lavet et responseEntity der returner det vi sletter og statuskoden)
             // det printer vi. Vi håndtere ligesom svaret fra vores backend server.
@@ -110,4 +110,6 @@ async function deleteBookingButtonEvent(event) {
 
     }
 }
-*/
+
+ */
+
