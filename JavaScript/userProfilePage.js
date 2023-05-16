@@ -51,6 +51,7 @@ function deleteUser(){
     const userprofile = {id: userId}
     fetchAny("userprofile","DELETE",userprofile).then(userprofilex=>{
        alert("This email has been deleted: " + userprofilex.email)
+        window.location.href = "frontpage.html"
     }).catch(error=>{alert("This email doesn't exit anymore.")});
 }
 
