@@ -78,10 +78,11 @@ function createUserProfileTable(userProfile) {
       <td>${userProfile.phoneNumber}</td>
       <td>${userProfile.password}</td>
     `;
-
     cell = row.insertCell(5)
+
+
     let pbUpdate = document.createElement("button")
-    pbUpdate.textContent = "Opdater"
+    pbUpdate.textConetnt = "Opdater"
     pbUpdate.className = "buttonupdate"
     pbUpdate.addEventListener('click', function () {
         const prodid = userProfile.id

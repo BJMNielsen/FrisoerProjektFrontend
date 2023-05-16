@@ -64,6 +64,17 @@ body {
     cursor: pointer;
 }
 
+.delete-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #a50303;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 .edit-button:hover {
     background-color: #00059C;
 }

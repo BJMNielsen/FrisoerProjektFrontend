@@ -4,11 +4,6 @@ const bookingsTable = document.querySelector("#tblBooking")
 
 
 
-
-const fetchName = document.querySelector("#name")
-const fetchEmail = document.querySelector("#email")
-const fetchPhoneNumber = document.querySelector("#phoneNumber")
-
 function updateUserprofileInformation(){
    document.querySelector("#PersonName").innerHTML = name;
    document.querySelector("#Email").innerHTML = email;
@@ -26,10 +21,9 @@ function run(){
     email = JSON.parse(sessionStorage.getItem("email")) // Retrieve the userId from sessionStorage
     phoneNumber = JSON.parse(sessionStorage.getItem("phoneNumber")) // Retrieve the userId from sessionStorage
     password = JSON.parse(sessionStorage.getItem("password")) // Retrieve the userId from sessionStorage
-    console.log("hello?")
-    console.log(userId)
     updateUserprofileInformation()
-
+    const deleteButton = document.querySelector(".delete-button");
+    deleteButton.addEventListener("click", deleteUser);
 }
 run()
 
@@ -53,9 +47,12 @@ function createRowsForBookingTable(booking){
     bookingsTable.appendChild(row);
 }
 
-
-
-
+function deleteUser(){
+    const userprofile = {id: userId}
+    fetchAny("userprofile","DELETE",userprofile).then(userprofilex=>{
+       alert("This email has been deleted: " + userprofilex.email)
+    }).catch(error=>{alert("This email doesn't exit anymore.")});
+}
 
 console.log(userId)
 fetchAny("bookings/userid/" + userId,"GET",null).then(userBookings=>{
