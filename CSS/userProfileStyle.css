@@ -2,15 +2,12 @@
     font-family: Epil;
 }
 body {
-    font-family: Epil, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: ivory;
+    align-content: center;
 }
 
 .profile {
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     width: 800px;
     border: 1px solid #ccc;

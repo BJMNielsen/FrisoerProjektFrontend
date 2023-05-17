@@ -13,6 +13,7 @@ function checkIfUserIsLoggedIn(){
     response
         .then(fetchedUserProfile => {userProfile = fetchedUserProfile})
         .catch(error => {
+            sessionStorage.removeItem("userId")
             console.log("brugeren du er logget ind som eksistere ikke mere. " + "Error message: " + error.message);
             window.location.href = 'loginPage.html';
         })

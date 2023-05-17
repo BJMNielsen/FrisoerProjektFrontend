@@ -3,46 +3,35 @@
 <head>
   <title>Login</title>
   <link rel="stylesheet" href="../CSS/loginStyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="../JavaScript/login.js" defer></script>
   <script src="../JavaScript/fetchhandling.js"></script>
-
-
+  <script src="../JavaScript/navbar.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+<header id="navigation-bar" style="margin-bottom: 10px"></header>
 <body>
+
 <div class="container">
+
   <h1>Login Page</h1>
   <form id="login-form">
     <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required>
-    <button id="login-button">Login
+    <button id="login-button" class="btn btn-dark">Login
     </button>
   </form>
-
-
-  <h1 class="user-list-heading">User Profile List</h1>
-  <table>
-    <thead>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-      <th>Email</th>
-      <th>Phone Number</th>
-      <th>Password</th>
-    </tr>
-    </thead>
-    <tbody id="userprofile-list">
-    <!-- User profile items will be dynamically added here -->
-    </tbody>
-  </table>
-
-
+  <br>
   <div class="forgot-password">
     <a href="#">Glemt password?</a>
   </div>
   <div class="create-user">
     Har du ikke et account? <a href="userprofileform.html">Opret</a>
+  </div>
+  <div class="admin-login">
+    <a href="adminlogin.html">Admin Login</a>
   </div>
 </div>
 </body>

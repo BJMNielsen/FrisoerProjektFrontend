@@ -5,18 +5,20 @@
   <link rel="stylesheet" href="../CSS/loginStyle.css">
   <script src="../JavaScript/adminLogin.js" defer></script>
   <script src="../JavaScript/fetchhandling.js"></script>
-
+  <script src="../JavaScript/navbar.js" defer></script>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
+<header id="navigation-bar" style="margin-bottom: 50px"></header>
 <body>
 <div class="container">
-  <h1>>Admin Login</h1>
+  <h1>Admin Login</h1>
   <form id="login-form">
     <label for="adminname">Name:</label>
     <input type="text" id="adminname" name="adminname" required>
     <label for="adminpassword">Password:</label>
     <input type="password" id="adminpassword" name="adminpassword" required>
-    <button id="login-button">Login
+    <button id="login-button" class="btn btn-dark">Login
     </button>
   </form>
 

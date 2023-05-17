@@ -4,73 +4,50 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../CSS/userProfileStyle.css">
     <script src="../JavaScript/fetchhandling.js"></script>
-    <!--<script src="../JavaScript/checkIfUserIsLoggedIn.js"></script>-->
+    <script src="../JavaScript/checkIfUserIsLoggedIn.js"></script>
     <script src="../JavaScript/userProfilePage.js" defer></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/navnbarFont.css">
     <title>Din Profil</title>
     <link rel="stylesheet" href="../CSS/FooterCSS.css">
-
+    <script src="../JavaScript/navbar.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-
+<header id="navigation-bar" style="margin-bottom: 50px"></header>
 <body>
+<div class="container">
+    <div class="profile">
+        <div class="profile-left">
+            <h2>Navn:</h2>
+            <p class="PersonName" id="PersonName">Name</p>
+            <h2>Email:</h2>
+            <p class="Email" id="Email">Email</p>
+            <h2>Telefon-nr:</h2>
+            <p class="phoneNumber" id="phoneNumber">PhoneNumber</p>
+            <button class="edit-button">Edit Profile</button>
+            <button class="delete-button">Delete Profile</button>
+        </div>
 
-<nav class="navbar navbar-expand-sm bg-ivory fixed-top">
-    <img src="logo%20nanna.png" width="250" height="100" alt="Picture of Nannas Logo">
-    <ul class="navbar-nav ml-auto justify-content-end">
-        <li class="nav-item">
-            <a class="nav-link text-dark" href="Priser.html" style="font-size: 20px; margin-right: 30px;">
-                Priser
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark" href="#" style="font-size: 20px; margin-right: 30px;">
-                Om mig
-            </a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link btn btn-dark rounded-pill d-flex align-items-center" href="calender.html" style="font-size: 20px; margin-right: 10px;">
-                <img src="calendar.png" alt="Login" width="30" height="30" class="mr-2">
-                <span class="flex-grow-1 text-light">Book tid</span>
-            </a>
-        </li>
-    </ul>
-</nav>
+        <div class="profile-middle">
+            <img src="4013014.png" class="profile-picture" alt="Profile Picture">
+        </div>
 
-
-
-<div class="profile">
-    <div class="profile-left">
-        <h2>Navn:</h2>
-        <p class="PersonName" id="PersonName">Name</p>
-        <h2>Email:</h2>
-        <p class="Email" id="Email">Email</p>
-        <h2>Telefon-nr:</h2>
-        <p class="phoneNumber" id="phoneNumber">PhoneNumber</p>
-        <button class="edit-button">Edit Profile</button>
-        <button class="delete-button">Delete Profile</button>
+        <div class="profile-right">
+            <h2>Dine tider</h2>
+            <table class="table table-striped" id="tblBooking">
+                <tr>
+                    <th scope="col">Dato</th>
+                    <th scope="col">Start</th>
+                    <th scope="col">Slut</th>
+                    <th scope="col">Behandling</th>
+                    <th scope="col">Pris</th>
+                </tr>
+            </table>
+        </div>
     </div>
 
-    <div class="profile-middle">
-        <img src="4013014.png" class="profile-picture" alt="Profile Picture">
-    </div>
-
-    <div class="profile-right">
-        <h2>Dine tider</h2>
-        <table class="table table-striped" id="tblBooking">
-            <tr>
-                <th scope="col">Dato</th>
-                <th scope="col">Start</th>
-                <th scope="col">Slut</th>
-                <th scope="col">Behandling</th>
-                <th scope="col">Pris</th>
-            </tr>
-        </table>
-    </div>
 </div>
-
-
-
 
 
 </body>
