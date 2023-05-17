@@ -3,12 +3,15 @@
     font-family: Epil;
 }
 body {
+    /*
     font-family: Epil, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: ivory;
+
+     */
 }
 
 h1 {
@@ -16,11 +19,15 @@ h1 {
 }
 
 .container {
-    width: 800px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    background-color: white;
+    font-family: Epil, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: ivory;
+
+    margin-top: -100px;
 }
 
 table {
