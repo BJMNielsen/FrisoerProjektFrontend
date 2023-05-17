@@ -13,7 +13,7 @@ function setMinDateToPick() {
     const today = new Date();
     const daysAwayFromToday = 1
     today.setDate(today.getDate() + daysAwayFromToday) // Add how many days to today's date
-    const minimumDate = today.toISOString().split("T")[0] // Format tomorrow's date as "YYYY-MM-DD"
+    const minimumDate = today.toISOString().split("T")[0] // Format tomorrow's date as "YYYY-MM-DD" and not "YYYY-MM-DDTHH:mm:ss.sssZ"
     dateInput.setAttribute("min", minimumDate)
 }
 setMinDateToPick()
@@ -86,8 +86,8 @@ function hideTableIfNoRows() {
 function insertTimeSlotsIntoTable(timeSlots) {
     const tableRowsArray = timeSlots.map(timeSlot => `
     <tr id="timeSlotRow${timeSlot.id}" onclick="setTheTimeslotValue(${timeSlot.id})">
-        <td>${timeSlot.startTime}</td>
-        <td>${timeSlot.endTime}</td>
+        <td>${timeSlot.startTime.slice(0, 5)}</td>
+        <td>${timeSlot.endTime.slice(0, 5)}</td>
     </tr>
     `)
     // join metoden fjerner alt mellem 2 strings og joiner dem.
@@ -139,10 +139,10 @@ function sendBooking() {
         })
         alert(`Tillykke ${userProfile.name} det lykkes at lave en booking!
                 \nDato: ${booking.date}
-                \nFuld Pris: ${booking.fullPrice} kr.
                 \nStart Tid: ${booking.timeSlot.startTime}
                 \nSlut Tid: ${booking.timeSlot.endTime}
                 ${treatmentDescriptions}
+                \nFuld Pris: ${booking.fullPrice} kr.
                 `)
     }).catch(error => {
         console.log("There was an Error:", error)

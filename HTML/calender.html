@@ -11,6 +11,9 @@
             crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
+    <script src="../JavaScript/navbar.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <link rel="stylesheet" href="../CSS/calender.css">
     <script src="../JavaScript/fetchhandling.js"></script>
     <script src="../JavaScript/checkIfUserIsLoggedIn.js"></script>
@@ -18,9 +21,14 @@
 
 </head>
 <body>
+<header id="navigation-bar" style="margin-bottom: 20px"></header>
 <main class="container" id="main">
-    <label for="dato-felt">Vælg en dato for din Booking:</label>
+    <h1>Book en Behandling</h1>
+    <h4>Først vælges en dato for klipningen, lørdage og søndage er der ingen tiden, derefter vælges en af de mulige tider.
+        Til sidst vælges der en behandling, en klipning skal vælges og om man vil have med eller uden hårvask.
+    Klik på "Send Booking" og der vil komme en tilbagemelding med enten en fejl eller en konfirmation på hvad der blev booket</h4>
     <br>
+    <label for="dato-felt" class="date-label">Vælg en dato for din Booking:</label>
     <input type="date" name="valgt-dato" id="dato-felt">
 
     <table class="table table-hover" id="tableOfAvailableTimes">
