@@ -17,7 +17,7 @@ function checkIfAdminIsAlreadyLoggedIn() {
         getLocalEntity("login/admin", adminLoginUrl)
             .then(admin => {
                 alert("Du er allerede logget ind som Admin: " + admin.name)
-                window.location.href = 'adminPage.html';
+                window.location.href = 'adminminetider.html';
             })
             .catch(error => {
                 sessionStorage.removeItem("adminName")
@@ -42,7 +42,7 @@ async function handleFormSubmit(event) {
     getLocalEntity("login/admin", emailPasswordUrl).then(adminProfile => {
         setAdminProfileCookie(adminProfile)
         alert("Det lykkes at logge ind som Admin: " + adminName)
-        window.location.href = 'adminPage.html'
+        window.location.href = 'adminminetider.html'
     }).catch(error => {
         alert(error.message)
     })

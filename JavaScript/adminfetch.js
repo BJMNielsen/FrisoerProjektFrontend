@@ -21,15 +21,19 @@ function createRowsForBookingTable(booking) {
     <td>${booking.timeSlot.startTime.slice(0, 5)}</td>
     <td>${booking.timeSlot.endTime.slice(0, 5)}</td>
     <td>${booking.fullPrice}</td>
+    <td><button class="btn btn-dark" id="${booking.id}-delete" onclick=deleteAlertMessage()>Delete</button></td>
   `;
     bookingsTable.appendChild(row);
 }
 
+function deleteAlertMessage(){
+    alert("You have succesfully deleted the booking")
+}
 
 
 function fetchBookings(){
     tblUserProfiles.innerHTML = ''
-    getLocalEntities("bookings").then(bookings => {
+    getLocalEntities("bookings/future").then(bookings => {
         // de skal ind i vores tabel
         bookings.forEach(booking => {
             createRowsForBookingTable(booking)
