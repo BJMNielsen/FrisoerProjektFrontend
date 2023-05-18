@@ -37,12 +37,11 @@ function createRowsForBookingTable(booking){
     });
     row.innerHTML = `
     <td>${booking.date}</td>
-    <td>${booking.timeSlot.startTime}</td>
-    <td>${booking.timeSlot.endTime}</td>
+    <td>${booking.timeSlot.startTime.slice(0, 5)}</td>
+    <td>${booking.timeSlot.endTime.slice(0, 5)}</td>
     <td>${treatmentNames.join(", ")}</td>
     <td>${totalPrice}</td>
     <td><button class="btn btn-primary" id="${booking.id}-deleteBooking">Delete</button></td>
-
   `;
     bookingsTable.appendChild(row);
 }

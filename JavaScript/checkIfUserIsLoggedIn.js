@@ -13,6 +13,7 @@ function checkIfUserIsLoggedIn(){
     response
         .then(fetchedUserProfile => {userProfile = fetchedUserProfile})
         .catch(error => {
+            // Dette kode er for når man sletter sin bruger, men du har stadig brugeren gemt i sin sessionStorage
             sessionStorage.removeItem("userId")
             console.log("brugeren du er logget ind som eksistere ikke mere. " + "Error message: " + error.message);
             window.location.href = 'loginPage.html';

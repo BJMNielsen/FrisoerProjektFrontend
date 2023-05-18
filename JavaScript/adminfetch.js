@@ -12,17 +12,15 @@ const bookingsTable = document.querySelector("#tblUserProfiles");
 function createRowsForBookingTable(booking) {
     const row = document.createElement("tr");
     const treatmentNames = [];
-    let totalPrice = 0;
     booking.treatments.forEach((treatment) => {
         treatmentNames.push(treatment.name);
-        totalPrice += treatment.price;
     });
     row.innerHTML = `
     <td>${booking.bookingUserProfile.name}</td>
     <td>${booking.date}</td>
-    <td>${booking.timeSlot.startTime}</td>
-    <td>${booking.timeSlot.endTime}</td>
-    <td>${totalPrice}</td>
+    <td>${booking.timeSlot.startTime.slice(0, 5)}</td>
+    <td>${booking.timeSlot.endTime.slice(0, 5)}</td>
+    <td>${booking.fullPrice}</td>
   `;
     bookingsTable.appendChild(row);
 }

@@ -13,8 +13,6 @@ function checkIfAdminIsAlreadyLoggedIn() {
     console.log("The adminName: " + adminName + " - The adminPassword: " + adminPassword)
     if (adminName !== null || adminPassword !== null) {
 
-        adminName = adminName.replace(/^"(.*)"$/, "$1")
-        adminPassword = adminPassword.replace(/^"(.*)"$/, "$1")
         const adminLoginUrl = adminName + "/" + adminPassword
         getLocalEntity("login/admin", adminLoginUrl)
             .then(admin => {
@@ -53,8 +51,8 @@ async function handleFormSubmit(event) {
 }
 
 function setAdminProfileCookie(adminProfile) {
-    sessionStorage.setItem("adminName", JSON.stringify(adminProfile.name))
-    sessionStorage.setItem("adminPassword", JSON.stringify(adminProfile.password))
-    console.log("setAdminProfileCookie: " + "adminName: " + sessionStorage.getItem("adminName").replace(/^"(.*)"$/, "$1"))
+    sessionStorage.setItem("adminName", adminProfile.name)
+    sessionStorage.setItem("adminPassword", adminProfile.password)
+    console.log("setAdminProfileCookie: " + "adminName: " + sessionStorage.getItem("adminName"))
 }
 

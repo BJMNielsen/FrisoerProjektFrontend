@@ -139,8 +139,8 @@ function sendBooking() {
         })
         alert(`Tillykke ${userProfile.name} det lykkes at lave en booking!
                 \nDato: ${booking.date}
-                \nStart Tid: ${booking.timeSlot.startTime}
-                \nSlut Tid: ${booking.timeSlot.endTime}
+                \nStart Tid: ${booking.timeSlot.startTime.slice(0, 5)}
+                \nSlut Tid: ${booking.timeSlot.endTime.slice(0, 5)}
                 ${treatmentDescriptions}
                 \nFuld Pris: ${booking.fullPrice} kr.
                 `)
