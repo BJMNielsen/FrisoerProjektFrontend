@@ -13,8 +13,10 @@ async function handleFormSubmit(event) {
     event.preventDefault();
     postLocalForm("userprofile", formUserProfile).then(userprofile => {
         console.log(userprofile)
-        actionFetchUserProfiles();
+        sessionStorage.setItem("userId", userprofile.id)
+        window.location.href = 'userProfilePage.html'
     }).catch(error => {
+        console.error("userprofileform.js Method handleFormSubmit had an Error:", error)
         alert("We got an error: " + error.message)
     })
 

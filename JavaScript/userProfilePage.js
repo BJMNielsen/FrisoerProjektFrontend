@@ -5,9 +5,19 @@ const bookingsTable = document.querySelector("#tblBooking")
 
 
 function updateUserprofileInformation(){
-   document.querySelector("#PersonName").innerHTML = name;
-   document.querySelector("#Email").innerHTML = email;
-   document.querySelector("#phoneNumber").innerHTML = phoneNumber;
+    const userId = sessionStorage.getItem("userId")
+    fetchAny(`userprofile/${userId}`).then(userProfile => {
+        document.querySelector("#PersonName").textContent = userProfile.name;
+        document.querySelector("#Email").textContent = userProfile.email;
+        document.querySelector("#phoneNumber").textContent = userProfile.phoneNumber;
+    }).catch(error => {
+        sessionStorage.removeItem("userId")
+        console.error("userProfilePage.js Method updateUserprofileInformation caught Error:", error)
+        alert("Will redirect you because you are not logged in within the browser.\n" +
+            "We had the Error message: " + error.message)
+        window.location.href = "loginPage.html"
+    })
+
 
    //document.querySelector("#tblBooking").addEventListener("click", deleteBookingButtonEvent);
     
@@ -50,6 +60,7 @@ function deleteUser(){
     const userprofile = {id: userId}
     fetchAny("userprofile","DELETE",userprofile).then(userprofilex=>{
        alert("This email has been deleted: " + userprofilex.email)
+        sessionStorage.removeItem("userId")
         window.location.href = "frontpage.html"
     }).catch(error=>{alert("This email doesn't exit anymore.")});
 }

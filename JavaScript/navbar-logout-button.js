@@ -1,5 +1,5 @@
 const logoutButton = document.querySelector("#logout-button")
-logoutButton.addEventListener("click", pushingLogoutButton)
+logoutButton.querySelector("button").addEventListener("click", pushingLogoutButton)
 
 function checkIfLoggedIn() {
     const userProfileId = sessionStorage.getItem("userId")
