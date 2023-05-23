@@ -11,16 +11,16 @@ body{
 }
 
 .img1{
-    position: relative; left: 480px; top: -600px;
+    position: relative; left: 950px; top: -500px;
     z-index: 0;
 }
 
 .img2{
-    position: relative; left: 870px; top: -1100px;
+    position: relative; left: 1370px; top: -1100px;
 }
 
 .preambleText{
-    position: relative;left: 100px; top: -30px;
+    position: relative;left: 120px; top: -30px;
     z-index:1;
 }
 
