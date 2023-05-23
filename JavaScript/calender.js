@@ -144,6 +144,7 @@ function sendBooking() {
                 ${treatmentDescriptions}
                 \nFuld Pris: ${booking.fullPrice} kr.
                 `)
+        window.location.href = 'userProfilePage.html'
     }).catch(error => {
         console.log("There was an Error:", error)
         alert("We encountered the Error: " + error.message)
