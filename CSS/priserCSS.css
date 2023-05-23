@@ -15,15 +15,6 @@
     color: greenyellow;
 }
 
-.footer{
-    position: relative;
-    left: 0;
-    top: 800px;
-    width: 100%;
-    background-color: white;
-    color: white;
-    text-align: center;
-}
 
 h3{
     color: greenyellow;
@@ -59,4 +50,11 @@ h3{
 .DameklipPris{
     position: relative;left: 1050px; top: -535px;
     z-index: 3;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: ivory;
+    height: auto;
+    margin: 0;
 }

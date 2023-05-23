@@ -1,8 +1,11 @@
 @font-face {
     font-family: Epil;
 }
-body {
-    background-color: black;
+body{
+    overflow-x: hidden;
+    background-color: ivory;
+    height: auto;
+    margin: 0;
 }
 
 .container {

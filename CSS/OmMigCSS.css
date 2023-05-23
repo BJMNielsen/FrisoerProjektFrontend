@@ -9,3 +9,10 @@
 .NannaBillede{
     position: relative;top: -500px; left: 600px;
 }
+
+body{
+    overflow-x: hidden;
+    background-color: ivory;
+    height: auto;
+    margin: 0;
+}

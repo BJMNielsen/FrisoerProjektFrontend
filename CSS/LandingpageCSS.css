@@ -7,16 +7,19 @@ h1{
 }
 
 body{
+    overflow-x: hidden;
     background-color: ivory;
+    height: auto;
+    margin: 0;
 }
 
 .img1{
-    position: relative; left: 950px; top: -500px;
+    position: relative; left: 600px; top: -500px;
     z-index: 0;
 }
 
 .img2{
-    position: relative; left: 1370px; top: -1100px;
+    position: relative; left: 1000px; top: -1100px;
 }
 
 .preambleText{
@@ -47,17 +50,5 @@ h3{
 .sePriserPill{
     position: relative;left: 140px; top: -70px;
     zoom: 1.2;
-}
-
-html, body{
-    margin: 0;
-}
-
-.footer{
-    margin-top: -600px;
-}
-
-body{
-    overflow-x: hidden;
 }
 
