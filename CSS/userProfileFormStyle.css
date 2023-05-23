@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 
-.container {
+.user-profile-form-container {
     font-family: Epil, sans-serif;
     display: flex;
     flex-direction: column;

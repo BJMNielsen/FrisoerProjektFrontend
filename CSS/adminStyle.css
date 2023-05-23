@@ -18,16 +18,14 @@ h1 {
     text-align: center;
 }
 
-.container {
+.aftale-container {
     font-family: Epil, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 60vh;
     background-color: ivory;
-
-    margin-top: -100px;
 }
 
 table {
