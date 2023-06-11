@@ -14,7 +14,7 @@ async function handleFormSubmit(event) {
     postLocalForm("userprofile", formUserProfile).then(userprofile => {
         console.log(userprofile)
         sessionStorage.setItem("userId", userprofile.id)
-        window.location.href = 'userProfilePage.html'
+        window.location.href = '../../HTML/ProfilePages/userProfilePage.html'
     }).catch(error => {
         console.error("userprofileform.js Method handleFormSubmit had an Error:", error)
         alert("We got an error: " + error.message)

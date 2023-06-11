@@ -61,7 +61,7 @@ function deleteUser(){
     fetchAny("userprofile","DELETE",userprofile).then(userprofilex=>{
        alert("This email has been deleted: " + userprofilex.email)
         sessionStorage.removeItem("userId")
-        window.location.href = "frontpage.html"
+        window.location.href = "../../HTML/GeneralPages/frontpage.html"
     }).catch(error=>{alert("This email doesn't exit anymore.")});
 }
 

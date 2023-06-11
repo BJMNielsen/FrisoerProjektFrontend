@@ -22,7 +22,7 @@ async function handleFormSubmit(event) {
 
     getLocalEntity("login", emailPasswordUrl).then(userProfile => {
         setUserProfileCookie(userProfile)
-        window.location.href = 'userProfilePage.html'
+        window.location.href = '../../HTML/ProfilePages/userProfilePage.html'
     }).catch(error => {alert(error.message)})
     /*
     try{const promise = await fetch(urlPostUserProfile + "/" + userEmail + "/" + userPassword)

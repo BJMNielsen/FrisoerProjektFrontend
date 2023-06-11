@@ -1,11 +1,11 @@
 $(function(){
-    $("#navigation-bar").load("../HTML/Navbar.html");
+    $("#navigation-bar").load("../../HTML/GeneralPages/Navbar.html");
 })
 
 $(function (){
-    $("#footer-bar").load("../HTML/footer.html");
+    $("#footer-bar").load("../../HTML/GeneralPages/footer.html");
 })
 
 $(function(){
-    $("#admin-navigation-bar").load("../HTML/adminnavbar.html");
+    $("#admin-navigation-bar").load("../../HTML/AdminPages/adminnavbar.html");
 })

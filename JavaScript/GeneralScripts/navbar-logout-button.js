@@ -17,5 +17,5 @@ checkIfLoggedIn()
 
 function pushingLogoutButton() {
     sessionStorage.removeItem("userId")
-    window.location.href = 'loginPage.html'
+    window.location.href = '../../HTML/GeneralPages/loginPage.html'
 }

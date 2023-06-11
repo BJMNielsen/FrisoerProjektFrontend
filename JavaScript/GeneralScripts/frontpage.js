@@ -5,7 +5,7 @@ function preparePillButtons() {
 }
 
 function bringUserToBookingPage() {
-    window.location.href = "calender.html"
+    window.location.href = "../../HTML/ProfilePages/calender.html"
 }
 
 function bringUserToPricePage() {

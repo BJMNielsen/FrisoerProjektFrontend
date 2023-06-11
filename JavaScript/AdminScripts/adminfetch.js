@@ -27,7 +27,7 @@ function createRowsForBookingTable(booking) {
 }
 
 function deleteAlertMessage(){
-    alert("You have succesfully deleted the booking")
+    alert("You wanted to delete a booking, but that feature is not implemented yet")
 }
 
 
